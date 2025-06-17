@@ -1,0 +1,97 @@
+.heroSection {
+  height: 100vh;
+  position: relative;
+}
+
+.headerWrapper {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  z-index: 3;
+}
+
+.carouselItem {
+  height: 100vh;
+  position: relative;
+}
+
+.carouselItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carouselCaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 60px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.leftSection {
+  max-width: 45%;
+  margin: 40px 0;
+}
+
+.leftSection h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.rightSection {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  margin: 50px 0;
+}
+
+.rightSection p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight:400;
+  margin: 0;
+}
+
+.rightSection button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .carouselCaption {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .leftSection,
+  .rightSection {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .rightSection {
+    align-items: flex-start;
+  }
+}
