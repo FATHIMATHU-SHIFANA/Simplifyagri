@@ -2,52 +2,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.ctaSection {
-  background-image: url("../../assets/banner.png");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 60px 20px;
-  border-radius: 20px;
-  margin: 0 100px;
-  color: #faf9f6;
-  position: relative;
-  top: 100px;
-  z-index: 2;
-}
-
-.ctaSection h2 {
-  font-size: 35px;
-  margin-bottom: 20px;
-}
-
-.subscribe {
-  display: inline-flex;
-  border-radius: 30px;
-  overflow: hidden;
-  background-color: #faf9f6;
-}
-
-.subscribe input {
-  padding: 12px 20px;
-  border: none;
-  width: 250px;
-  font-size: 14px;
-  outline: none;
-}
-
-.subscribe button {
-  background-color: #609222;
-  color: #faf9f6;
-  padding: 12px 20px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .footer {
   background-color: #1b1212;
   padding-top: 150px;

@@ -4,6 +4,10 @@ import image1 from "../../assets/farm.png";
 import image2 from "../../assets/nature.png";
 import image3 from "../../assets/crops.png";
 import styles from "./home.module.css";
+import CallToAction from "../CallToAction/CallToAction";
+import bannerImage from "../../assets/banner_home.png";
+import About from "../About/About";
+import Services from "../Services/Services";
 
 function Home() {
   return (
@@ -25,7 +29,7 @@ function Home() {
             <img src={image1} className="d-block w-100" alt="Farm" />
             <div className={styles.carouselCaption}>
               <div className={styles.leftSection}>
-                <h2>Empowering farmers and FPO’s with digital tools</h2>
+                <h2>Empowering farmers and FPO's with digital tools</h2>
               </div>
               <div className={styles.rightSection}>
                 <p>
@@ -42,7 +46,7 @@ function Home() {
             <img src={image2} className="d-block w-100" alt="Nature" />
             <div className={styles.carouselCaption}>
               <div className={styles.leftSection}>
-                <h2>From Local to Global: Digitize Your FPO’s Operations</h2>
+                <h2>From Local to Global: Digitize Your FPO's Operations</h2>
               </div>
               <div className={styles.rightSection}>
                 <p>
@@ -72,6 +76,26 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* About */}
+      <div id="about">
+        <About />
+      </div>
+      {/* Services */}
+      <div id="services">
+        <Services />
+      </div>
+
+      {/* CTA */}
+      <CallToAction
+        bgImage={bannerImage}
+        heading={
+          <span>
+            Ready to take your farm <br />
+            to the next level
+          </span>
+        }
+      />
     </div>
   );
 }

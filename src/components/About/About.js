@@ -8,8 +8,8 @@ function About() {
   return (
     <section className={styles.aboutSection}>
       <div className={styles.topImages}>
-        <img src={img1} alt="Tech in Farming" className={styles.smallImages} />
-        <img src={img1} alt="Tablet with AI" className={styles.smallImage} />
+        <img src={img1} alt="Tech in Farming" className={styles.topLeft} />
+        <img src={img1} alt="Tablet with AI" className={styles.topRight} />
       </div>
 
       <div className={styles.content}>
@@ -30,8 +30,8 @@ function About() {
       </div>
 
       <div className={styles.bottomImages}>
-        <img src={img2} alt="Farming Machines" className={styles.largeImages} />
-        <img src={img3} alt="Drone View" className={styles.largeImage} />
+        <img src={img2} alt="Farming Machines" className={styles.bottomLeft} />
+        <img src={img3} alt="Drone View" className={styles.bottomRight} />
       </div>
     </section>
   );

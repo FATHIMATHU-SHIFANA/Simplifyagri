@@ -1,0 +1,124 @@
+.ctaWrapper {
+  padding: 0 20px;
+}
+
+.ctaSection {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  color: #faf9f6;
+  position: relative;
+  top: 100px;
+  z-index: 2;
+  max-width: 1200px;
+}
+
+.ctaSection h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.subscribe {
+  display: inline-flex;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #faf9f6;
+  max-width: 100%;
+}
+
+.subscribe input {
+  padding: 12px 20px;
+  border: none;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+}
+
+.subscribe button {
+  background-color: #609222;
+  color: #faf9f6;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .ctaSection {
+    margin: 0 80px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaSection {
+    margin: 0 40px;
+    top: 60px;
+    padding: 40px 20px;
+  }
+  
+  .ctaSection h2 {
+    font-size: 30px;
+  }
+  
+  .subscribe {
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .subscribe input {
+    width: 100%;
+  }
+  
+  .subscribe button {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .ctaSection {
+    margin: 0 20px;
+    top: 50px;
+    padding: 30px 15px;
+  }
+  
+  .ctaSection h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe {
+  max-width:50% ;
+  }
+  
+  .subscribe input,
+  .subscribe button {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ctaSection {
+    margin: 0 10px;
+    top: 40px;
+    padding: 30px 10px;
+    border-radius: 15px;
+  }
+  
+  .ctaSection h2 {
+    font-size: 22px;
+  }
+  
+  .subscribe button span {
+    display: none;
+  }
+}

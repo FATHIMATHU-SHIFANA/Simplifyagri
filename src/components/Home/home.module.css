@@ -1,14 +1,16 @@
-.heroSection {
-  height: 100vh;
-  position: relative;
-}
-
 .headerWrapper {
   position: absolute;
   width: 100%;
-  top: 20px;
+  top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 1000; 
+  padding: 20px 0; 
+}
+
+.heroSection {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .carouselItem {
@@ -24,52 +26,51 @@
 
 .carouselCaption {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 40px 60px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  align-items: center;
+  padding: 0 180px;
+  color: white;
   z-index: 2;
-  box-sizing: border-box;
 }
 
 .leftSection {
-  max-width: 45%;
-  margin: 40px 0;
+  width: 55%;
+   margin-top: 500px;
 }
 
 .leftSection h2 {
   font-size: 50px;
   font-weight: bold;
-  color: white;
+  color: #faf9f6;
   line-height: 1.4;
   text-align: left;
 }
 
 .rightSection {
-  max-width: 40%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   text-align: left;
-  margin: 50px 0;
+  margin-top: 490px ;
 }
 
 .rightSection p {
-  color: white;
+  color: #faf9f6;
   font-size: 20px;
   line-height: 1.4;
-  font-weight:400;
+  font-weight: 400;
   margin: 0;
 }
 
 .rightSection button {
-  background-color: white;
+  background-color: #faf9f6;
   color: black;
   border: none;
   padding: 10px 20px;
@@ -78,20 +79,98 @@
   cursor: pointer;
 }
 
+@media (max-width: 1440px) {
+  .carouselCaption{
+    gap:60px;
+  }
+  .leftSection h2 {
+    font-size: 44px;
+  }
+  .rightSection{
+    margin-top: 533px;
+  }
+  .rightSection p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carouselCaption {
+    padding: 40px 50px;
+  }
+  .leftSection{
+    max-width: 50%;
+  }
+  .leftSection h2 {
+    font-size: 38px;
+  }
+ .rightSection{
+    margin-top: 545px;
+    max-width:30% ;
+  }
+}
+
+@media (max-width: 992px) {
+  .leftSection h2 {
+    font-size: 32px;
+  }
+  .rightSection p {
+    font-size: 16px;
+  }
+  .rightSection button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .carouselCaption {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 30px;
+  }
+  .leftSection {
+    width: 50%;
+  }
+  .rightSection {
+    width: 45%;
+  }
+  .leftSection h2 {
+    font-size: 26px;
+  }
+  .captionRow {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carouselCaption {
     padding: 20px;
   }
-
-  .leftSection,
-  .rightSection {
-    max-width: 100%;
-    text-align: left;
+  .leftSection h2 {
+    font-size: 22px;
+    line-height: 1.3;
   }
+  .rightSection p {
+    font-size: 14px;
+  }
+  .rightSection button {
+    padding: 6px 12px;
+  }
+}
 
+@media (max-width: 480px) {
+  .leftSection {
+    width: 55%;
+  }
   .rightSection {
-    align-items: flex-start;
+    width: 40%;
+  }
+  .leftSection h2 {
+    font-size: 18px;
+  }
+  .rightSection p {
+    font-size: 12px;
+  }
+  .captionRow {
+    gap: 15px;
   }
 }

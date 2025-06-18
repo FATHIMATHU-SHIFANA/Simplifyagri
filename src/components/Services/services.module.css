@@ -77,4 +77,80 @@
   font-size: 14px;
 }
 
+@media (max-width: 1200px) {
+  .cardGrid {
+    margin: 0 40px;
+  }
+}
 
+@media (max-width: 992px) {
+  .cardGrid {
+    margin: 0 20px;
+  }
+  
+  .card {
+    width: calc(50% - 30px);
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesWrapper {
+    padding: 30px 15px;
+  }
+  
+  .cardGrid {
+    margin: 0;
+    gap: 15px;
+  }
+  
+  .card {
+    width: calc(50% - 15px); 
+    height: auto;
+    min-height: 220px;
+  }
+  
+  .cardNumber {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .servicesWrapper {
+    padding: 20px 10px;
+  }
+  
+  .serviceHead {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .cardGrid {
+    gap: 12px;
+  }
+  
+  .card {
+    width: 100%; 
+    max-width: 350px;
+    padding: 15px;
+  }
+  
+  .cardTitle {
+    font-size: 15px;
+  }
+  
+  .cardDescription {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .serviceHead {
+    padding: 4px 12px;
+    font-size: 15px;
+  }
+  
+  .cardNumber {
+    font-size: 36px;
+  }
+}

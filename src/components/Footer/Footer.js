@@ -13,22 +13,6 @@ import {
 const Footer = () => {
   return (
     <div className={styles.footerWrapper}>
-      {/* Call-to-Action */}
-      <div className={styles.ctaSection}>
-        <h2>
-          Ready to take your farm
-          <br />
-          to the next level
-        </h2>
-        <div className={styles.subscribe}>
-          <input type="email" placeholder="Enter your Email" />
-          <button>
-            Send <span>&rarr;</span>
-          </button>
-        </div>
-      </div>
-
-      {/* Footer */}
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.leftSection}>
@@ -83,7 +67,6 @@ const Footer = () => {
               79073 35177
             </p>
             <p>
-        
               <span className={styles.contactIcon}>
                 <FaEnvelope />
               </span>

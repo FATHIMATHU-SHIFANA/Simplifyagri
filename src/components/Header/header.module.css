@@ -1,44 +1,108 @@
 .navHeader {
   background-color: #092d05;
   display: flex;
-  gap: 68px;
   justify-content: space-between;
   align-items: center;
-  height: 56px;
+  padding: 10px 20px;
   border-radius: 40px;
-  margin: 20px 180px;
+  margin: 20px auto;
+  max-width: 1200px;
+  position: relative;
 }
-.logo{
-  margin-left: 20px;
+
+.logo {
   display: flex;
   align-items: center;
 }
+
 .logoImage {
   width: 55px;
   height: 40px;
-  margin: 10px;
+  margin-right: 10px;
 }
+
 .logoText {
   color: #86bc43;
   font-weight: 700;
   font-size: 26px;
 }
+
 .navLinks {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
+
 .navLink {
   color: #faf9f6;
   text-decoration: none;
   font-size: 18px;
   font-family: "Inter", sans-serif;
 }
+
 .contactLink {
   color: #faf9f6;
   text-decoration: none;
   font-size: 18px;
   border: 0.5px solid #faf9f666;
-  padding:5px 25px;
+  padding: 5px 25px;
   border-radius: 40px;
-  margin-right: 20px;
+}
+
+.menuIcon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.desktopContact {
+  display: block;
+}
+
+.mobileContact {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .navHeader {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navHeader {
+    margin: 0 20px;
+  }
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #092d05;
+    padding: 20px;
+    gap: 15px;
+    z-index: 99;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .desktopContact {
+    display: none;
+  }
+
+  .mobileContact {
+    display: inline-block;
+  }
 }

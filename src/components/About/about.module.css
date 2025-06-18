@@ -4,38 +4,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 200px;
+  position: relative;
 }
 
 .topImages,
 .bottomImages {
   position: relative;
   margin: 40px 10px;
+  width: 100%;
+  height: 100px;
 }
 
-.smallImages {
+.topLeft {
   position: absolute;
-  top: 80px;
-  right: 350px;
+  top: 100px;
+  left: 160px;
   width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-.smallImage {
-  position: absolute;
-  left: 350px;
-  width: 250px;
-  height: 280px;
+  height: 230px;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.largeImages {
+.topRight {
   position: absolute;
-  right: 200px;
+  right: 280px;
+  width: 230px;
+  height: 290px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.bottomLeft {
+  position: absolute;
+  left: 150px;
   bottom: -130px;
   width: 350px;
   height: 240px;
@@ -43,10 +46,10 @@
   object-fit: cover;
 }
 
-.largeImage {
+.bottomRight {
   position: absolute;
-  left: 350px;
-  bottom: -70px;
+  right: 280px;
+  bottom: -60px;
   width: 240px;
   height: 240px;
   border-radius: 20px;
@@ -56,6 +59,7 @@
 .content {
   max-width: 800px;
   margin-top: 40px;
+  padding: 0 20px;
 }
 
 .tag {
@@ -95,3 +99,201 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+@media (max-width: 1400px) {
+  .topLeft {
+    left: 100px;
+  }
+  .topRight {
+    right: 200px;
+  }
+  .bottomLeft {
+    left: 100px;
+  }
+  .bottomRight {
+    right: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .topLeft {
+    left: 80px;
+    width: 180px;
+    height: 210px;
+  }
+  .topRight {
+    right: 180px;
+    width: 210px;
+    height: 270px;
+  }
+  .bottomLeft {
+    left: 80px;
+    width: 320px;
+    height: 220px;
+  }
+  .bottomRight {
+    right: 180px;
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 992px) {
+  .topLeft {
+    left: 60px;
+    width: 160px;
+    height: 190px;
+  }
+  .topRight {
+    right: 120px;
+    width: 190px;
+    height: 240px;
+  }
+  .bottomLeft {
+    left: 60px;
+    width: 280px;
+    height: 200px;
+  }
+  .bottomRight {
+    right: 120px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .content h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    margin-bottom: 180px;
+  }
+  
+  .topImages,
+  .bottomImages {
+    height: 80px;
+  }
+  
+  .topLeft {
+    top: 80px;
+    left: 40px;
+    width: 140px;
+    height: 160px;
+  }
+  .topRight {
+    right: 40px;
+    width: 160px;
+    height: 200px;
+  }
+  .bottomLeft {
+    left: 30px;
+    width: 240px;
+    height: 180px;
+    bottom: -120px;
+  }
+  .bottomRight {
+    right: 40px;
+    width: 180px;
+    height: 180px;
+    bottom: -50px;
+  }
+  
+  .content h2 {
+    font-size: 32px;
+  }
+  
+  .description {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutSection {
+    margin-bottom: 150px;
+  }
+  
+  .topImages,
+  .bottomImages {
+    height: 60px;
+    margin: 20px 10px;
+  }
+  
+  .topLeft {
+    top: 60px;
+    left: 5px;
+    width: 120px;
+    height: 140px;
+  }
+  .topRight {
+    right: -60px;
+    width: 140px;
+    height: 160px;
+  }
+  .bottomLeft {
+    left: 15px;
+    width: 200px;
+    height: 150px;
+    bottom: -100px;
+  }
+  .bottomRight {
+    right: -60px;
+    width: 150px;
+    height: 150px;
+    bottom: -40px;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+  }
+  
+  .description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .tag {
+    font-size: 14px;
+  }
+  
+  .learnMore {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutSection {
+    margin-bottom: 130px;
+  }
+  
+  .topLeft {
+    left: 15px;
+    width: 100px;
+    height: 120px;
+  }
+  .topRight {
+    right: 40px;
+    width: 120px;
+    height: 140px;
+  }
+  .bottomLeft {
+    width: 180px;
+    height: 130px;
+    bottom: -90px;
+  }
+  .bottomRight {
+    right: 40px;
+    width: 130px;
+    height: 130px;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+} 
